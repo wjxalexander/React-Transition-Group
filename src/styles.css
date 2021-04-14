@@ -1,0 +1,52 @@
+.box-container {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-appear {
+  opacity: 0;
+  transform: translateX(-500px) scale(0.6);
+}
+
+.slide-appear-done {
+  opacity: 1;
+  transition: all 400ms;
+  transform: translateX(0) scale(1);
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: translateX(-500px) scale(0.3);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transition: all 400ms ease-out;
+  transform: translateX(0) scale(1);
+}
+
+.slide-exit {
+  opacity: 1;
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transition: all 400ms ease-in;
+  transform: translateX(500px) scale(0.3);
+}
